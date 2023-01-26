@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    char a[]="hello";
+    int n=sizeof(a)/sizeof(a[0]);
+    n=n-1;
+    char temp;
+    for(int i=0;i<n/2;i++){
+        temp = a[i];
+        a[i]=a[n-i-1];
+        a[n-i-1]=temp;
+    }
+    printf("%s",a);
+    return 0;
+}
+input : hello
+output : olleh
