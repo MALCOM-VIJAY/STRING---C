@@ -1,0 +1,37 @@
+//to store
+#include<stdio.h>
+#include<string.h>
+void main(){
+   char str[20]="malc";
+   int len, i, j;
+   len=strlen(str);
+   for(i=0; i<len; i++){
+      if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u' || str[i]=='A' ||
+str[i]=='E' || str[i]=='I' || str[i]=='O' || str[i]=='U'){
+    for(j=i;j<len;j++){
+        str[j]=str[j+1];
+    }
+    len--;
+    }
+       
+   }
+    printf("After Deleting the vowels, the String is: %s",str);
+   }
+
+
+**********************************************************************
+//to print
+#include <stdio.h>
+int main()
+{
+    int flag=0,i=0;
+    char a[]={"malcom vijay josephraj"};
+    while(a[i]!='\0'){
+        if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'){
+            a[i]=1;
+        }
+        i++;
+    }
+    printf("%s",a);
+    return 0;
+}
