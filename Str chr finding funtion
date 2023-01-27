@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int flag=0,i=0;
+    char a[]={"malcom"};
+    char inp;
+    scanf("%c",&inp);
+    while(a[i]!='\0'){
+        if(a[i]==inp){
+            flag=1;
+        }
+        i++;
+    }
+    if(flag){
+        printf("Yes");
+    }
+    else{
+        printf("No");
+    }
+    return 0;
+}
