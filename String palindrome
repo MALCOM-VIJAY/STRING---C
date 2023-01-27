@@ -1,0 +1,19 @@
+#include <stdio.h>
+void pal(char b[],int len){
+    int s=0;
+    int size=len-2; //to get to the last index
+    while(size>s){
+        if(b[s++]!=b[size--]){
+            printf("Not a palindrome");
+            return;
+        }
+    }
+    printf("Palindrome");
+}
+int main()
+{
+    char a[]={"mal"};
+    int len=sizeof(a)/sizeof(a[0]);;
+    pal(a,len);
+    return 0;
+}
