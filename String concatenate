@@ -1,5 +1,27 @@
+//LOGIC 1 (EXTRA ARRAY)
 #include <stdio.h>
-
+int main()
+{
+    char a[]={"Vijay"};
+    char b[]={"mani"};
+    char c[100];
+    int i=0,j=0;
+    while(a[i]!='\0'){
+        c[i]=a[i];
+        i++;
+    }
+    while(b[j]!='\0'){
+        c[i]=b[j];
+        j++;
+        i++;
+    }
+    c[i]='\0';
+    printf("%s",c);
+    return 0;
+}
+*****************************************************************************
+//LOGIC 2
+#include <stdio.h>
 int main()
 {
     char a[100]={"mal"};
